@@ -16,6 +16,8 @@ let t1 = 0.4;
 let l1 = 0.7;
 let t2 = 0.8;
 let l2 = 0.1;
+let easing = 0.08;
+let reasing = 0.05;
 
 function preload() {
 }
@@ -89,13 +91,45 @@ class Blorb {
         this.history = [];
         this.notehistory = [b];
         this.b = b;
+        // this.dx = ;
+        // this.dy = ;
+        // this.xdest = ;
+        // this.ydest = ;
     }
     
     display() {
         
         // stroke(20);
         
+        fill(this.f);
+        //check if blorb is close to an edge and redirect
+        // if (this.x <= 50) {
+        //     this.xdest = this.x + random(100);
+        // } else if (this.x >= height-50) {
+        //     this.xdest = this.x + random(-100);
+        // } else ;
+        // if (this.y <= 50) {
+        //     this.ydest = this.y + random(100);
+        // } else if (this.y >= width-50) {
+        //     this.ydest = this.y + random(-100);
+        // } else ;
+
+        if (typeof this.xdest === "number") {
+            this.dx = this.xdest - this.x;
+            this.x += this.dx * easing;
+        } else ;
         
+        
+        if (typeof this.ydest === "number") {
+            this.dy = this.ydest - this.y;
+            this.y += this.dy * easing;
+        } else ;
+            // this.dy = this.y - this.ydest;
+
+            if (typeof this.rdest === "number") {
+                this.dr = this.rdest - this.r;
+                this.r += this.dr * reasing;
+            } else ; 
         beginShape(TRIANGLE_FAN);
         for (var i = 0; i < this.history.length; i++) {
             var pos = this.history[i];
@@ -104,15 +138,18 @@ class Blorb {
             vertex(pos.x,pos.y);
             endShape();
         }
+
         stroke(20);
-        fill(this.f);
-        ellipse(this.x, this.y, this.r * 2);
-        lerp(this.x, this.y, 0.2);
+        ellipse(this.x, this.y, this.r);
+        // lerp(this.newx, this.newy, 0.2);
     }
     
     playAudio() {
         // Sound playback per blorb.
         var p = midiToFreq(this.notehistory[this.notehistory.length - 1]);
+        if (p > 20000 || p < 30) {
+            var p = midiToFreq(this.notehistory[this.notehistory.length]);
+        }
         // for (var i = 0; i < this.notehistory.length; i++) {
         //     p = this.history[i];
         // }
@@ -147,10 +184,10 @@ class Blorb {
         
         // try to generate movement
         this.f = random(255);
-        this.r = this.r + random(-2, 2);
-        this.xdest = this.x + random(-50, 50);
-        this.ydest = this.y + random(-50, 50);
+        this.rdest = this.r + random(-10, 10);
 
+        this.xdest = this.x + random(-100, 100);
+        this.ydest = this.y + random(-100, 100);
         // make new notehistory.
 
         if (this.notehistory.length > 10) {
@@ -177,8 +214,8 @@ class Blorb {
         
         
         // set a loop that moves the thing. This might need to refresh the function...
-        this.x += random(-50, 50);
-        this.y += random(-50, 50);
+        // this.x += random(-50, 50);
+        // this.y += random(-50, 50);
         var v = createVector(this.x, this.y, this.f);
         this.history.push(v);
         
