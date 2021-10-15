@@ -1,12 +1,12 @@
 site: fcpvg
 title: fcpvg
-greetings: Hi. 👋
+greetings: "Hello."
 description: >-
   a place to show things
 lang: en-US
 timezone:  Europe/Rome
 # repo: https://github.com/p0wex/Gesko # site repo [optional]
-data-theme: light # default theme "dark" | "light"
+data-theme: "light" # default theme "dark" | "light"
 
 author:
   name: fc
@@ -26,8 +26,8 @@ baseurl: "/" # sub folder for jekyll site. only if jekyll site not in root of ho
 permalink: pretty
 
 # local
-# url: "http://localhost:4000" # 
-# baseurl: "" # 
+url: "http://localhost:4000" # 
+baseurl: "/" # 
 
 
 markdown: kramdown
