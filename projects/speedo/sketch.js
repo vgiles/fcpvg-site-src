@@ -6,6 +6,7 @@ let defaultAngle = 120;
 let sensitivity = 2.5;
 let micSensitivityLevel = 0.001;
 let slider;
+let slider2;
 // var steps = TWO_PI/360;
 
 
@@ -16,14 +17,20 @@ function setup() {
     mic = new p5.AudioIn();
     mic.start();
     angleMode(DEGREES);  
-    slider = createSlider(0.0001, 0.2, 0.001, 0);
-    slider.position(10, 10);
+    slider = createSlider(0.002, 1.0, 0.001, 0);
+    slider.position(width/2, (height/2)+20);
     slider.style('width', '80px');
+    slider2 = createSlider(1.0, 25.0, 0.25);
+    slider2.position(width/2, (height/2)+40);
+    slider2.style('width', '80px');
   }
 
 function draw() {
     background(0);
     image(img, width/2 - (img.width/2), height/2 - (img.width/2), img.width, img.height); 
+    textSize(14);
+    fill(255);
+    text("Microphone Sensitivity", width/2, height-(height-140) );
     // background(255);
     // expandCar();
     moveDial();
@@ -32,6 +39,7 @@ function draw() {
 function moveDial() {
     let micSensitivityLevel = slider.value();
     let micLevel = mic.getLevel();
+    let sensitivity = slider2.value();
     strokeWeight(10); 
     stroke(255, 200, 200, 130);
     let cx = width/2;
@@ -67,7 +75,7 @@ function moveDial() {
 }
 
 function preload() {
-  img = loadImage('/projects/speedo/assets/speedometer.png');
+  img = loadImage('../assets/speedometer.png');
 }
 
 function mousePressed() {
