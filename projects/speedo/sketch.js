@@ -61,7 +61,7 @@ function moveDial() {
 }
 
 function preload() {
-  img = loadImage('/assets/speedometer.png');
+  img = loadImage('/projects/assets/speedometer.png');
 }
 
 function mousePressed() {
