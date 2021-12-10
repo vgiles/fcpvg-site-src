@@ -17,12 +17,12 @@ function setup() {
     mic = new p5.AudioIn();
     mic.start();
     angleMode(DEGREES);  
-    slider = createSlider(0.002, 1.0, 0.001, 0);
+    slider = createSlider(0.0002, 1.0, 0.0001, 0);
     slider.position(width/2, (height/2)+20);
     slider.style('width', '80px');
-    slider2 = createSlider(1.0, 25.0, 0.25);
-    slider2.position(width/2, (height/2)+40);
-    slider2.style('width', '80px');
+    // slider2 = createSlider(1.0, 25.0, 0.25);
+    // slider2.position(width/2, (height/2)+40);
+    // slider2.style('width', '80px');
   }
 
 function draw() {
@@ -37,9 +37,10 @@ function draw() {
 }
 
 function moveDial() {
-    let micSensitivityLevel = slider.value();
-    let micLevel = mic.getLevel();
-    let sensitivity = slider2.value();
+    let sensitivity = slider.value();
+    let micLevel = mic.getLevel() * 15;
+    // console.log(micLevel);
+    // let sensitivity = slider2.value();
     strokeWeight(10); 
     stroke(255, 200, 200, 130);
     let cx = width/2;
@@ -52,6 +53,7 @@ function moveDial() {
     // line(0, 0, 1 * radius, 1 * radius);
     if (micLevel > micSensitivityLevel) {
         angle = (angle + 1) * (micLevel*sensitivity);
+        // console.log(angle);
         rotate(defaultAngle + angle);
         line(0, 0, 1 * radius, 1 * radius);
     } else {
