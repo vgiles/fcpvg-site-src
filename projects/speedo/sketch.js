@@ -9,7 +9,7 @@ let slider;
 let slider2;
 // var steps = TWO_PI/360;
 
-
+// Need to use slider to scale the if value for operating the detector algo.
 function setup() {  
     let cnv = createCanvas(windowWidth, windowHeight);
     cnv.mousePressed(userStartAudio);
@@ -17,12 +17,12 @@ function setup() {
     mic = new p5.AudioIn();
     mic.start();
     angleMode(DEGREES);  
-    slider = createSlider(0.0002, 1.0, 0.0001, 0);
+    slider = createSlider(1.0, 30.0, 0.1, 0);
     slider.position(width/2, (height/2)+20);
     slider.style('width', '80px');
-    // slider2 = createSlider(1.0, 25.0, 0.25);
-    // slider2.position(width/2, (height/2)+40);
-    // slider2.style('width', '80px');
+    slider2 = createSlider(1.0, 25.0, 0.25);
+    slider2.position(width/2, (height/2)+40);
+    slider2.style('width', '80px');
   }
 
 function draw() {
@@ -38,7 +38,8 @@ function draw() {
 
 function moveDial() {
     let sensitivity = slider.value();
-    let micLevel = mic.getLevel() * 15;
+    let micLevel = mic.getLevel() * sensitivity;
+    let micSensitivityLevel = slider2.getValue();
     // console.log(micLevel);
     // let sensitivity = slider2.value();
     strokeWeight(10); 
@@ -52,7 +53,7 @@ function moveDial() {
     // rotate(angle);
     // line(0, 0, 1 * radius, 1 * radius);
     if (micLevel > micSensitivityLevel) {
-        angle = (angle + 1) * (micLevel*sensitivity);
+        angle = (angle + 2) * (micLevel);
         // console.log(angle);
         rotate(defaultAngle + angle);
         line(0, 0, 1 * radius, 1 * radius);
