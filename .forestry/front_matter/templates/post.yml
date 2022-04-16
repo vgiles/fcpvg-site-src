@@ -15,3 +15,5 @@ fields:
 - type: text
   name: summary
   label: summary
+pages:
+- _posts/a-little-test.md
