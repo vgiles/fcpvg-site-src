@@ -2,15 +2,15 @@ site: fcpvg
 title: fcpvg
 greetings: "Hello."
 description: >-
-  a place to show things
+  a place to show and write about things that are interesting to me, separate from other portfolio sites.
 lang: en-US
-timezone:  Europe/Rome
+timezone:  Australia/Melbourne
 # repo: https://github.com/p0wex/Gesko # site repo [optional]
 data-theme: "light" # default theme "dark" | "light"
 
 author:
-  name: fc
-  bio: a place to show things
+  name: the faultiest cat
+  bio: a composer and producer living on Wurundjeri Country, Australia. 
   userpicture: 
   # username: p0wex # general username
   # github: p0wex # github username
