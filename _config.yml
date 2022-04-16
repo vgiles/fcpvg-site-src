@@ -2,7 +2,7 @@ site: fcpvg
 title: fcpvg
 greetings: "Hello."
 description: >-
-  a place to show and write about things that are interesting to me, separate from other portfolio sites.
+  a place to show and write about things that are interesting to me, separate from other <a href="https://www.vgiles.net" target="_new">portfolio</a> <a href="https://www.faultycat.com.au" target="_new">sites</a>.
 lang: en-US
 timezone:  Australia/Melbourne
 # repo: https://github.com/p0wex/Gesko # site repo [optional]
