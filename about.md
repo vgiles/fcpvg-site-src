@@ -4,6 +4,16 @@ title: About
 permalink: /about/
 ---
 
+<section class="post">
+  <div class="flex-row-between">
+      <a href="{{ site.url }}{{ site.baseurl }}/">« Home</a>
+    <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+      <div></div>
+    </button>
+  </div>
+</section>
+
+<section>
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
 
 You can find the source code for Minima at GitHub:
@@ -16,3 +26,4 @@ You can find the source code for Jekyll at GitHub:
 
 
 [jekyll-organization]: https://github.com/jekyll
+</section>
