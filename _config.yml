@@ -3,19 +3,18 @@ title: fcpvg
 greetings: "Hello."
 description: >-
   a place to show and write about things that are interesting to me, separate from other <a href="https://www.vgiles.net" target="_new">portfolio</a> <a href="https://www.faultycat.com.au" target="_new">sites</a>.
-lang: en-US
+lang: en-UK
 timezone:  Australia/Melbourne
 # repo: https://github.com/p0wex/Gesko # site repo [optional]
 data-theme: "light" # default theme "dark" | "light"
 
 author:
-  name: the faultiest cat
+  name: Vincent Giles
   bio: a composer and producer living on Wurundjeri Country, Australia. 
   userpicture: 
-  # username: p0wex # general username
-  # github: p0wex # github username
-  # twitter: P0Wex # twitter username
-  # email: your-email@email.com # email adress
+  username: vin # general username
+  twitter: VincentGiles # twitter username
+  email: vin@vgiles.net # email adress
 
 # Font Settings
 googlewebfonts: family=Play:wght@400;700&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700;1,900
