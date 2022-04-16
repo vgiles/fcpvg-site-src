@@ -1,0 +1,19 @@
+---
+label: Post
+hide_body: false
+fields:
+- type: text
+  name: layout
+  label: layout
+  default: post
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: text
+  name: summary
+  label: summary
+pages:
+- _posts/2022-04-16-a-little-test.md
