@@ -3,6 +3,7 @@ layout: post
 title: A place to show things
 description: This is a website for occasional weird writing, and to demo things.
 summary: This is a website for occasional weird writing, and to demo things.
+author: vin
 ---
 
 This site is a place for me to show works in progress, invite feedback, etc. 
