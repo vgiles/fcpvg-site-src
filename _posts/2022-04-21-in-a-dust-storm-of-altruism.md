@@ -7,8 +7,6 @@ summary: In this short post I talk about how part of Rebecca Solnit's Hope in th
   in a new composition involving voice.
 
 ---
-# in a dust storm of altruism
-
 I've been wanting to work with voice in a composition (or more than one composition), and started doing so a few years ago writing some mesostic poems/pieces inspired by Cage's work along similar lines. But for a new piece, I wanted to find text that really resonates with me but also goes some way towards offering some sense of hope. Over the last few months I've been slowly working my way through Rebecca Solnit's _Hope in the Dark_, which offers some really fantastic (if somewhat old, now) examples of revolutionary hope against what were then some pretty dire political circumstances, that have worsened since.
 
 In particular, this passage:
