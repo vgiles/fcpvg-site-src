@@ -66,7 +66,7 @@ I have been slowly working on the first draft of a piece for solo cello that is 
 
 This piece differs substantially from _silver_, primarily because the transcription process is purely aural[^3] rather than mediated through computer-assisted techniques with Open Music. The source material is simply listened to actively, and I've been "thinking through" the piece. What is interesting about this is that I'm not attempting to transcribe it accurately, but rather capture the spirit of it. It's like I'm dragging the new piece through the old piece, and trying to imbue some of the qualities on it. By writing-through the improvisation, the improvisation itself acts as repeated jumping-off points for tangential writing - the writing _through_ process - akin to seeded improvisation[^4] but in reverse. Seeded composition?
 
-![Figure 4: First page of the draft for this new cello piece](/uploads/for-cello.png π)
+![Figure 4: First page of the draft for this new cello piece](/uploads/for-cello.png)
 
 So far, this mode of composition has been interesting and rewarding, familiar, but novel enough that it is hitting those reward centres in the brain. By focussing on moment-by-moment gestures within the recorded work, I am able to hear the landscape of the original piece, and imagine maybe an adjacent landscape, in a way that standard transcription – for accuracy – simply does not achieve. The process of writing through, of translating, transcoding, or transfusing within the transcription, offers an insight into both the new composition and the source material that I never expected, and a creative mechanism that I think will yield a lot of work for a long time.
 
