@@ -47,19 +47,45 @@ window.addEventListener('keydown', (e) => {
   });
 
 var displayText = 'Type your name, then press return/enter';
-
+var fade = 255;
+var fadeAmount = 1;
 let superArray = [];
+let dummyFrameRate = 25;
+let fadeTime = 5*dummyFrameRate; // set fade time in seconds
+
+
+
+function gameLoop() {
+    fadeText();
+    window.requestAnimationFrame(gameLoop);
+}
 
 function setup() {
     createCanvas(720, 400);
-    frameRate(25);
+    frameRate(dummyFrameRate);
+    // window.requestAnimationFrame(gameLoop);
     renderText();
+    
 }
 
+function fadeText() {
+    background(255);
+    if (fade > 254) {
+        fadeAmount = -1;
+        fade += fadeAmount;
+        fill(0,0,0,fade);
+        textSize(32);
+        text(displayText, 10, 30);
+    } 
+}
 function renderText() {
     background(255);
+    // let fade = 255;
+    fill(0,0,0,fade);
     textSize(32);
     text(displayText, 10, 30);
+    // fadeText();
+    // fade = 255;
 }
 
 function draw() {
